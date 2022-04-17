@@ -4,6 +4,14 @@ $(function () {
         $(this).toggleClass("toggled"); // this just rotates the expander arrow
     });
 });
+let initialHeight = document.getElementById('PlayerContainer').getBoundingClientRect().height;
+
+
+
+
+window.addEventListener('resize', e =>{
+    console.log(document.getElementById('PlayerContainer').getBoundingClientRect().height);
+});
 
 
 document.querySelectorAll(".menu-item").forEach(elem => {

@@ -61,8 +61,15 @@ p, h1 {
     flex-direction: column;
 }
 
+.place-holder{
+    height: calc(100% - 720px);
+    background-image: url('/One_Piece_Logo.svg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .PlayerContainer{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
