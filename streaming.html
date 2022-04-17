@@ -10,6 +10,7 @@
     <title>One Pace Project</title>
     <link rel="stylesheet" href="stream.css" />
     <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon-32x32.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
@@ -315,7 +316,6 @@
             </div>
         </div>
     </div>
-
     <div class="center-cont">
         <div id="PlayerContainer" class="PlayerContainer" height="100%" width="100%">
             <video style="width: 100%;"
@@ -326,7 +326,11 @@
             poster="https://pbs.twimg.com/media/EUolT2OWsAYzRM8.jpg"
             data-setup="{}"
           >
-            <source id="source" src="/Videos/episode1.mp4" type="video/mp4" />
+            <source id="source" src="" type="video/mp4" />
+            <script>
+                let lastEpisode = localStorage['lastEpisode'] || '/Videos/episode1';
+                document.getElementById("source").src = lastEpisode;
+            </script>
             <p class="vjs-no-js">
               To view this video please enable JavaScript, and consider upgrading to a
               web browser that
