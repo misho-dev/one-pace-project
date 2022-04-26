@@ -16,10 +16,8 @@ $(function () {
 document.querySelectorAll(".menu-item").forEach(elem => {
     elem.addEventListener("click", e =>{
         let link = e.target.getAttribute("data-title");
-        let video = document.getElementById('my-video_html5_api');
-        video.src = link;
+        let iframe = document.getElementById('iframeId');
+        iframe.src = link;
         localStorage['lastEpisode'] = link;
-        video.load();
-        video.play();
     })
 })
