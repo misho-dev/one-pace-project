@@ -63,7 +63,7 @@ p, h1 {
 
 .place-holder{
     height: calc(100% - 720px);
-    background-image: url('/One_Piece_Logo.svg.png');
+    background-image: url('/One_Piece_Logo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
